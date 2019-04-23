@@ -22,50 +22,33 @@
                                 <rect key="frame" x="162.66666666666666" y="391" width="50" height="30"/>
                                 <state key="normal" title="Tap me"/>
                                 <connections>
-                                    <segue destination="sJG-Oq-C4F" kind="presentation" id="8o8-EZ-SlP"/>
+                                    <action selector="changeLabel:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xuC-uJ-FNl"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change me" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bq8-uS-FW4">
+                                <rect key="frame" x="108" y="144" width="159" height="39"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="32"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="bq8-uS-FW4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="EBf-cM-o3F"/>
                             <constraint firstItem="vNc-Oo-GYG" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jbw-sJ-TF7"/>
+                            <constraint firstItem="bq8-uS-FW4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="lTV-S8-zTU"/>
                             <constraint firstItem="vNc-Oo-GYG" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="x8h-Vl-H2f"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="xVH-mV-BEe"/>
+                    <connections>
+                        <outlet property="myLabel" destination="bq8-uS-FW4" id="huY-Ck-tM3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="0.80000000000000004" y="109.35960591133005"/>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="Ojm-r8-uzr">
-            <objects>
-                <viewController id="sJG-Oq-C4F" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1LX-9i-8fX">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="61H-6t-if1">
-                                <rect key="frame" x="158.66666666666666" y="391" width="58" height="30"/>
-                                <state key="normal" title="Go Back"/>
-                                <connections>
-                                    <segue destination="IaW-aS-Eda" kind="unwind" unwindAction="unwindToTopWithSegue:" id="HCe-UJ-X4N"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstItem="61H-6t-if1" firstAttribute="centerY" secondItem="1LX-9i-8fX" secondAttribute="centerY" id="a4O-D3-TvO"/>
-                            <constraint firstItem="61H-6t-if1" firstAttribute="centerX" secondItem="1LX-9i-8fX" secondAttribute="centerX" id="hYC-IA-hyU"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="z3k-Ch-Pls"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NdA-q0-DdB" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="IaW-aS-Eda" userLabel="Exit" sceneMemberID="exit"/>
-            </objects>
-            <point key="canvasLocation" x="710" y="109"/>
+            <point key="canvasLocation" x="943.20000000000005" y="109.35960591133005"/>
         </scene>
     </scenes>
 </document>
